@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+  <!-- Loading Page -->
+  <div id="loading" class="fixed inset-0 flex items-center justify-center bg-black z-50">
+    <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+  </div>
+  <div id="content" class="hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full p-6 z-50 bg-black">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">My Portfolio</a>
+        <ul class="flex space-x-8 items-center">
+          <li><a href="#home" class="hover:text-gray-400 transition duration-300">Home</a></li>
+          <li><a href="#about" class="hover:text-gray-400 transition duration-300">About</a></li>
+          <li><a href="#projects" class="hover:text-gray-400 transition duration-300">Projects</a></li>
+          <li><a href="#contact" class="hover:text-gray-400 transition duration-300">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <!-- Home Section with Background Image -->
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url('home.jpg');">
+      <div class="text-center bg-black bg-opacity-60 p-12 rounded-xl backdrop-blur-sm">
+        <h1 class="text-6xl font-bold mb-6">Baquiran & Bautista</h1>
+        <p class="text-xl mb-8">We create modern and interactive web experiences.</p>
+        <a href="#about" class="inline-block bg-white text-black px-6 py-3 rounded-full hover:bg-gray-200 transition duration-300">
+          Learn More
+        </a>
+      </div>
+    </section>
+
+   <!-- About Section -->
+<section id="about" class="min-h-screen py-20 flex items-center justify-center bg-gray-900">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">About Us</h2>
+    
+    <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+      <!-- Hero's Profile -->
+      <div class="text-center">
+        <div class="w-48 h-48 md:w-64 md:h-64 bg-gray-700 rounded-full overflow-hidden mx-auto mb-6 border-4 border-white">
+          <img src="hero.png" alt="Hero Baquiran" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-2xl font-bold">Hero Bautista</h3>
+        <p class="mt-2 text-blue-400">Frontend Specialist</p>
+        <p class="mt-4 max-w-xs mx-auto">
+          UI/UX designer and frontend developer with an eye for beautiful, functional interfaces.
+        </p>
+      </div>
+
+      <!-- Noel's Profile -->
+      <div class="text-center">
+        <div class="w-48 h-48 md:w-64 md:h-64 bg-gray-700 rounded-full overflow-hidden mx-auto mb-6 border-4 border-white">
+          <img src="noel.png" alt="Noel Bautista" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-2xl font-bold">Noel Baquiran</h3>
+        <p class="mt-2 text-green-400">Backend Specialist</p>
+        <p class="mt-4 max-w-xs mx-auto">
+          Server-side architect who builds robust, scalable backend systems.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-16 text-center max-w-3xl mx-auto">
+      <p class="text-xl leading-relaxed">
+        We're a passionate web development duo with complementary skills in design and development. 
+        Together, we create modern and interactive web experiences that stand out.
+      </p>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#projects" class="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition duration-300">
+          View Our Work
+        </a>
+        <a href="#contact" class="bg-transparent border-2 border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- Projects Section -->
+<section id="projects" class="min-h-screen py-20 flex items-center justify-center bg-black">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+    
+    <div class="flex justify-center">
+      <!-- Single Project Card -->
+      <div class="max-w-md mx-auto bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+        <a href="https://herob27.github.io/landing_page_final/" target="_blank" rel="noopener noreferrer">
+          <div class="h-64 overflow-hidden">
+            <img src="landing_page.png" alt="Landing Page Project" class="w-full h-full object-cover hover:opacity-90 transition duration-300">
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-2">Modern Landing Page</h3>
+            <p class="text-gray-300">A responsive landing page design with clean aesthetics and smooth animations.</p>
+            <div class="mt-4">
+              <span class="inline-block bg-blue-500 text-white px-3 py-1 text-sm rounded-full">HTML/CSS</span>
+              <span class="inline-block bg-purple-500 text-white px-3 py-1 text-sm rounded-full ml-2">JavaScript</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Future Projects Placeholder -->
+    <div class="mt-16 text-center">
+      <p class="text-xl text-gray-400">More projects coming soon...</p>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+<section id="contact" class="min-h-screen py-20 flex items-center justify-center bg-gray-900">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
+    
+    <form id="contactForm" class="max-w-lg mx-auto bg-gray-800 p-8 rounded-xl">
+      <div class="mb-6">
+        <label for="name" class="block text-sm font-medium mb-2">Name</label>
+        <input type="text" id="name" class="w-full px-4 py-2 bg-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+      </div>
+      
+      <div class="mb-6">
+        <label for="email" class="block text-sm font-medium mb-2">Email</label>
+        <input type="email" id="email" class="w-full px-4 py-2 bg-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+      </div>
+      
+      <div class="mb-8">
+        <label for="message" class="block text-sm font-medium mb-2">Message</label>
+        <textarea id="message" rows="4" class="w-full px-4 py-2 bg-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+      </div>
+      
+      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded transition duration-300">
+        Send Message
+      </button>
+      
+      <p id="thankYouMessage" class="hidden mt-4 text-center text-green-400">
+        Thanks for your message! We'll get back to you soon...
+      </p>
+    </form>
+  </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Show fake "thank you" message
+  document.getElementById('thankYouMessage').classList.remove('hidden');
+  
+  // Rickroll after 1.5 seconds
+  setTimeout(function() {
+    window.location.href = "https://youtu.be/xvFZjo5PgG0";
+  }, 1500);
+  
+  // Reset form
+  this.reset();
+});
+</script>
+    <!-- Footer -->
+    <footer class="py-6 text-center bg-gray-800">
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

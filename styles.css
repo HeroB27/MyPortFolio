@@ -1,0 +1,26 @@
+/* styles.css */
+
+/* Smooth transitions */
+body, nav, section, footer, button, a, input, textarea {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Loading Page */
+#loading {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+#loading.hidden {
+  opacity: 0;
+}
+
+/* Main Content */
+#content {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#content.visible {
+  opacity: 1;
+}
